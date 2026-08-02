@@ -1,0 +1,40 @@
+PAZ DISPATCH - FIREBASE HOSTING DEPLOYMENT
+
+Administrator: jesse@paztrans.com
+Planned domain: dispatch.paztrans.com
+
+OPTION A - GOOGLE CLOUD SHELL (EASIEST)
+1. Sign in to https://console.firebase.google.com using jesse@paztrans.com.
+2. Create a Firebase project named "PAZ Dispatch".
+3. Open Cloud Shell from the Google Cloud/Firebase console.
+4. Upload and unzip PAZ_Dispatch_Firebase_Deploy.zip.
+5. In Cloud Shell, open the unzipped folder and run:
+
+   firebase login
+   firebase projects:list
+   firebase use --add
+   firebase deploy --only hosting
+
+6. Firebase will provide a temporary HTTPS address ending in web.app.
+7. In Firebase Console, open Hosting > Add custom domain.
+8. Enter dispatch.paztrans.com.
+9. Add the DNS records Firebase provides wherever paztrans.com DNS is managed.
+10. Firebase automatically provisions and renews the SSL certificate.
+
+OPTION B - LOCAL COMPUTER
+1. Install Node.js 18 or newer.
+2. Install Firebase CLI:
+
+   npm install -g firebase-tools
+
+3. Unzip this package and open a terminal inside the folder.
+4. Run:
+
+   firebase login
+   firebase projects:list
+   firebase use --add
+   firebase deploy --only hosting
+
+IMPORTANT
+- This package is currently a front-end prototype. Its sample dispatch data is stored in the browser on each device.
+- Before daily production use, add Firebase Authentication, Firestore, Cloud Storage, and security rules so all devices share live data securely.
