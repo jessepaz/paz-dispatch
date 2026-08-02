@@ -1,0 +1,19 @@
+GITHUB UPLOAD
+
+1. Open:
+   https://github.com/jessepaz/paz-dispatch
+
+2. Click:
+   Add file > Upload files
+
+3. Open this extracted folder.
+
+4. Select ALL files and folders inside it.
+
+5. Drag them into GitHub.
+
+6. Commit message:
+   Add PAZ Dispatch Pro starter
+
+7. Click:
+   Commit changes
