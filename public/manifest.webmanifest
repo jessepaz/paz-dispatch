@@ -1,0 +1,30 @@
+{
+  "id": "/",
+  "name": "PAZ Dispatch",
+  "short_name": "PAZ Dispatch",
+  "description": "PAZ Transport Operations Center",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#070707",
+  "theme_color": "#070707",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/paz-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/paz-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
